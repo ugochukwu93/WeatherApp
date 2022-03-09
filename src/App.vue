@@ -49,6 +49,7 @@ export default {
     },
     setResults (results) {
       this.weather = results
+      console.log(results)
     },
     dateBuilder () {
       let d = new Date();
@@ -82,6 +83,14 @@ main {
   min-height: 100vh;
   padding: 25px;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.75));
+}
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+   
+    min-height: 100vh;
+    background-color: lightblue;
+  }
 }
 .search-input {
   width: 100%;
@@ -144,10 +153,15 @@ main {
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25)
 }
 #App.warm {
-  background-image: url("./assets/maria-teneva-Exj9-cn1Wso-unsplash.jpg")
+  background-image: url("https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop")
+}
+@media only screen and (max-width: 600px) {
+
 }
 #App {
-  background-image: url('./assets/kat_-g--51LlTIUaHE-unsplash.jpg');
+  background-image: url('https://static01.nyt.com/images/2014/12/11/technology/personaltech/11machin-illo/11machin-illo-articleLarge-v3.jpg?quality=75&auto=webp&disable=upscale');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0px 350px 0px 350px
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -155,5 +169,10 @@ main {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px; */
+}
+@media only screen and (max-width: 600px) {
+  #App {
+    margin: 0px 0px 0px 0px
+  }
 }
 </style>
